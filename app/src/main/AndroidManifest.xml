@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dictionary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+		    <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- windowSoftInputMode tag is for show keyboard when you tap on it not always you are in activity -->
+
+        </activity>
+        <activity
+            android:name=".WordDialog"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".Favorite"
+            android:windowSoftInputMode="stateHidden" >
+
+            <!-- windowSoftInputMode tag is for show keyboard when you tap on it not always you are in activity -->
+        </activity>
+        <activity
+            android:name=".FlashCardActivity"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name=".FlashCardTrain" >
+        </activity>
+        <activity
+            android:name=".FlashCardDialog"
+            android:label="@string/title_activity_flash_card_dialog" 
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog">
+        </activity>
+    </application>
+
+</manifest>

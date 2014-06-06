@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lyn_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:choiceMode="singleChoice"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+        </ListView>
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="کلمه مورد نظر یافت نشد"
+            android:textColor="#2129d5"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:background="#baceea"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <EditText
+                android:id="@+id/search_edit_text"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="left|center_vertical"
+                android:ems="10"
+                android:hint="جستجوی کلمه"
+                android:paddingLeft="10dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/clear_edittext"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/clearbtn_selector_action" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>
+    
